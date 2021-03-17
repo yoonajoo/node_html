@@ -6,8 +6,8 @@ module.exports = function(app) {
          extended: true
       }));
      
-     app.get('/',function(req,res){
-        res.render('index.html')
+     app.get('/',function(req,res){ 
+        res.render('index.html')          // index.html 가장 먼저 실행
      });
      app.get('/about',function(req,res){
         res.render('about.html');
